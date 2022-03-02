@@ -282,7 +282,7 @@ module.exports.loop = function () {
                                                   rolerepairerBig.run(creep);
                                                 }
                                                 if(creep.memory.role == 'grunt') {
-                                                  rolerGrunt.run(creep);
+                                                  roleGrunt.run(creep);
                                                 }
                                               }
                                             }
