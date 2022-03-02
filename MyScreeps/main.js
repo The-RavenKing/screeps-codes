@@ -6,6 +6,7 @@ var roleupgraderBig = require('role.upgraderbig')
 var rolebuilderBig = require('role.builderbig')
 var roleRepairer = require('role.repairer')
 var rolerepairerBig = require('role.repairerbig')
+var roleGrunt = require('role.grunt')
 
 module.exports.loop = function () {
 
@@ -279,6 +280,9 @@ module.exports.loop = function () {
                                                 }
                                                 if(creep.memory.role == 'repairerbig') {
                                                   rolerepairerBig.run(creep);
+                                                }
+                                                if(creep.memory.role == 'grunt') {
+                                                  rolerGrunt.run(creep);
                                                 }
                                               }
                                             }
