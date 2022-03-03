@@ -128,7 +128,7 @@ module.exports.loop = function () {
                     function spawnHarvester() {
                       var newName = 'Harvester' + Game.time;
                       console.log('Spawning new harvester: ' + newName);
-                      Game.spawns['RavenKing'].spawnCreep([WORK,CARRY,MOVE], newName,
+                      Game.spawns['RavenKing'].spawnCreep([WORK,WORK,CARRY,CARRY,MOVE,MOVE], newName,
                         {memory: {role: 'harvester', targetSourceId: '5bbcb09d9099fc012e63c6f3'}});
                       }
 
