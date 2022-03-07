@@ -9,6 +9,10 @@ Game.spawns['RavenKing'].spawnCreep( [WORK, CARRY, MOVE], 'Builder1',
 Game.spawns['RavenKing'].spawnCreep( [WORK, CARRY, MOVE], 'Harvester1',
     { memory: { role: 'harvester' } } );
 
+    //Create an Upgrader1
+    Game.spawns['RavenKing'].spawnCreep( [WORK, CARRY, MOVE], 'Upgrader1',
+        { memory: { role: 'upgrader' } } );
+
 //calls and runs the roles role from main script module for harvester & upgrader
 var roleHarvester = require('role.harvester');
 var roleUpgrader = require('role.upgrader');

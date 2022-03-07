@@ -1,4 +1,4 @@
-var rolebuilderBig = {
+var rolebuilder = {
 
   /** @param {Creep} creep **/
   run: function(creep) {
@@ -7,7 +7,6 @@ var rolebuilderBig = {
       creep.memory.building = false;
       creep.say('🔄 harvest');
     }
-    
     if(!creep.memory.building && creep.store.getFreeCapacity() == 0) {
       creep.memory.building = true;
       creep.say('🚧 build');
@@ -30,4 +29,4 @@ var rolebuilderBig = {
   }
 };
 
-module.exports = rolebuilderBig;
+module.exports = rolebuilder;

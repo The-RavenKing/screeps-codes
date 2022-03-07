@@ -128,7 +128,7 @@ module.exports.loop = function () {
                     function spawnHarvester() {
                       var newName = 'Harvester' + Game.time;
                       console.log('Spawning new harvester: ' + newName);
-                      Game.spawns['RavenKing'].spawnCreep([WORK,WORK,CARRY,CARRY,MOVE,MOVE], newName,
+                      Game.spawns['RavenKing'].spawnCreep([WORK,CARRY,MOVE], newName,
                         {memory: {role: 'harvester', targetSourceId: '5bbcb09d9099fc012e63c6f3'}});
                       }
 
@@ -247,7 +247,7 @@ module.exports.loop = function () {
                                                 function spawnGrunt() {
                                                   var newName = 'grunt' + Game.time;
                                                   console.log('Spawning new grunt: ' + newName);
-                                                  Game.spawns['RavenKing'].spawnCreep([WORK,WORK,WORK,MOVE,MOVE,MOVE,CARRY], newName,
+                                                  Game.spawns['RavenKing'].spawnCreep([WORK,WORK,MOVE,MOVE,CARRY,CARRY], newName,
                                                     {memory: {role: 'grunt'}});
                                                   }
 
